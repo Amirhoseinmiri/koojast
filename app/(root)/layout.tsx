@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "test description",
 };
 
-export default function RootLayout({
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <main>
       <Header />
-      {children}
+      <div className="">{children}</div>
     </main>
   );
 }

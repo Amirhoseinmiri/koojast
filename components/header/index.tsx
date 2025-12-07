@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { User } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -11,8 +12,10 @@ export default function Header() {
       <div className="relative max-w-7xl mx-auto px-6 py-4">
         {/* left: profile icon (visual left because dir=rtl) */}
         <div className="absolute left-6 top-1/2 -translate-y-1/2">
-          <Button size={"icon"} variant={"ghost"}>
-            <User />
+          <Button size={"icon"} variant={"ghost"} asChild>
+            <Link href={"/login"}>
+              <User />
+            </Link>
           </Button>
         </div>
 
