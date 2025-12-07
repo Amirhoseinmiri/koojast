@@ -1,5 +1,5 @@
 import React from "react";
-import BussinessHome from "../../components/bussiness-home";
+import BussinessHome from "@/components/bussiness-home";
 
 const BussinesPage = () => {
   return (
